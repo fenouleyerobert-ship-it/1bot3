@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI Constructor engineering workspace">
+  <title>AI Constructor — Engineering Workspace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#" aria-label="AI Constructor home"><span class="brand-mark"><i></i><i></i><i></i></span><span>AI <b>CONSTRUCTOR</b></span></a>
+    <nav aria-label="Main navigation">
+      <p class="nav-label">Workspace</p>
+      <a class="nav-item active" href="#"><span data-icon="grid"></span>Overview</a>
+      <a class="nav-item" href="#projects"><span data-icon="folder"></span>Projects <em>12</em></a>
+      <a class="nav-item" href="#upload"><span data-icon="upload"></span>Upload center</a>
+      <a class="nav-item" href="#jobs"><span data-icon="spark"></span>AI jobs <small>3</small></a>
+      <p class="nav-label">Engineering</p>
+      <a class="nav-item" href="#drawings"><span data-icon="drawing"></span>Drawings</a>
+      <a class="nav-item" href="#models"><span data-icon="cube"></span>3D models</a>
+      <a class="nav-item" href="#docs"><span data-icon="file"></span>Documentation</a>
+      <a class="nav-item" href="#assistant"><span data-icon="chat"></span>AI assistant</a>
+    </nav>
+    <div class="storage-card">
+      <div><span>Storage</span><b>64%</b></div><div class="progress"><i></i></div>
+      <p>32.4 GB of 50 GB used</p><button>Manage storage</button>
+    </div>
+    <div class="sidebar-bottom">
+      <a class="nav-item" href="#help"><span data-icon="help"></span>Help & support</a>
+      <a class="nav-item" href="#settings"><span data-icon="settings"></span>Settings</a>
+      <div class="profile"><div class="avatar">AK</div><div><b>Alex Kovalev</b><span>Lead Engineer</span></div><button aria-label="Profile menu">•••</button></div>
+    </div>
+  </aside>
+
+  <main>
+    <header>
+      <button class="mobile-menu" aria-label="Toggle navigation">☰</button>
+      <label class="search"><span data-icon="search"></span><input aria-label="Search" placeholder="Search projects, drawings, parts..."><kbd>⌘ K</kbd></label>
+      <div class="header-actions"><button class="icon-button" aria-label="Notifications"><span data-icon="bell"></span><i></i></button><button class="primary" id="newProject"><span>＋</span> New project</button></div>
+    </header>
+
+    <section class="content">
+      <div class="welcome"><div><p>THURSDAY, JULY 30</p><h1>Good morning, Alex.</h1><span>Here’s what’s happening across your engineering workspace.</span></div><button class="secondary" id="uploadBtn"><span data-icon="upload"></span> Upload drawing</button></div>
+
+      <div class="metrics">
+        <article><div class="metric-icon blue"><span data-icon="folder"></span></div><div><span>Active projects</span><strong>12</strong><p><b>↑ 2</b> this month</p></div></article>
+        <article><div class="metric-icon violet"><span data-icon="spark"></span></div><div><span>AI jobs running</span><strong>3</strong><p>2 completing soon</p></div></article>
+        <article><div class="metric-icon green"><span data-icon="check"></span></div><div><span>Drawings analyzed</span><strong>247</strong><p><b>↑ 18%</b> this month</p></div></article>
+        <article><div class="metric-icon orange"><span data-icon="clock"></span></div><div><span>Engineering time saved</span><strong>86h</strong><p><b>↑ 12.5h</b> this month</p></div></article>
+      </div>
+
+      <div class="dashboard-grid">
+        <section class="panel projects" id="projects">
+          <div class="panel-head"><div><h2>Recent projects</h2><p>Continue working on your latest designs</p></div><a href="#all">View all projects <span>→</span></a></div>
+          <div class="project-list">
+            <article class="project-row">
+              <div class="blueprint gearbox" aria-label="Gearbox technical drawing"><div class="gear g1"></div><div class="gear g2"></div><div class="shaft"></div></div>
+              <div class="project-info"><div class="title-line"><h3>Helical Gearbox HGB-240</h3><span class="status active">Active</span></div><p>Industrial drive system · Nordex Manufacturing</p><div class="project-meta"><span>▱ 24 files</span><span>⬡ 86 parts</span><span>Updated 2h ago</span></div></div>
+              <button class="more" aria-label="Project options">•••</button>
+            </article>
+            <article class="project-row">
+              <div class="blueprint pump" aria-label="Hydraulic pump technical drawing"><div class="pumpbody"></div><div class="pipe"></div></div>
+              <div class="project-info"><div class="title-line"><h3>Hydraulic Pump Assembly</h3><span class="status review">In review</span></div><p>HPX-450 series · Axiom Hydraulics</p><div class="project-meta"><span>▱ 18 files</span><span>⬡ 42 parts</span><span>Updated yesterday</span></div></div>
+              <button class="more" aria-label="Project options">•••</button>
+            </article>
+            <article class="project-row">
+              <div class="blueprint valve" aria-label="Valve technical drawing"><div class="valvebody"></div></div>
+              <div class="project-info"><div class="title-line"><h3>Control Valve CV-80</h3><span class="status complete">Complete</span></div><p>Flow control module · Velton Systems</p><div class="project-meta"><span>▱ 31 files</span><span>⬡ 64 parts</span><span>Updated Jul 28</span></div></div>
+              <button class="more" aria-label="Project options">•••</button>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel activity">
+          <div class="panel-head"><div><h2>AI activity</h2><p>Live processing queue</p></div><button class="more">•••</button></div>
+          <div class="activity-list">
+            <div class="job"><div class="job-top"><div class="job-icon processing"><span data-icon="scan"></span></div><div><b>Analyzing drawing set</b><span>Helical Gearbox HGB-240</span></div><strong>72%</strong></div><div class="progress blue"><i style="width:72%"></i></div><p><span class="pulse"></span>Detecting components · 38s remaining</p></div>
+            <div class="job"><div class="job-top"><div class="job-icon model"><span data-icon="cube"></span></div><div><b>Generating 3D model</b><span>Shaft Assembly SA-120</span></div><strong>46%</strong></div><div class="progress purple"><i style="width:46%"></i></div><p><span class="pulse purple-dot"></span>Building geometry · 1m 12s remaining</p></div>
+            <div class="job"><div class="job-top"><div class="job-icon done"><span data-icon="file"></span></div><div><b>Service manual ready</b><span>Hydraulic Pump Assembly</span></div><button class="download">Download</button></div><p class="complete-time">Completed 14 minutes ago</p></div>
+          </div>
+          <button class="queue-button">View processing queue <span>→</span></button>
+        </section>
+      </div>
+
+      <section class="panel quick-panel">
+        <div class="panel-head"><div><h2>Quick actions</h2><p>Start a new engineering task</p></div></div>
+        <div class="quick-actions">
+          <button data-action="upload"><span class="quick-icon blue"><span data-icon="upload"></span></span><span><b>Analyze drawing</b><small>Upload PDF, DWG or image</small></span><i>→</i></button>
+          <button data-action="model"><span class="quick-icon violet"><span data-icon="cube"></span></span><span><b>Generate 3D model</b><small>From drawing or parameters</small></span><i>→</i></button>
+          <button data-action="docs"><span class="quick-icon green"><span data-icon="file"></span></span><span><b>Create documentation</b><small>Manuals & parts catalogues</small></span><i>→</i></button>
+          <button data-action="ask"><span class="quick-icon orange"><span data-icon="chat"></span></span><span><b>Ask AI engineer</b><small>Get project-aware answers</small></span><i>→</i></button>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-card"><button class="modal-close" aria-label="Close">×</button><div class="modal-icon"><span data-icon="upload"></span></div><h2 id="modalTitle">Upload engineering drawing</h2><p>Drop a PDF, DWG, DXF, STEP or image to begin AI analysis.</p><label class="dropzone"><input type="file" accept=".pdf,.png,.jpg,.jpeg,.tiff,.dwg,.dxf,.step,.iges,.zip"><b>Drop your file here</b><span>or click to browse · max 250 MB</span></label><button class="primary modal-action">Choose a file</button></div>
+  </div>
+  <div class="toast" role="status" aria-live="polite"><span>✓</span><div><b>Project created</b><p>Your new workspace is ready.</p></div></div>
+  <script src="/app.js"></script>
+</body>
+</html>
